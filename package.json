@@ -1,6 +1,6 @@
 {
   "name": "website",
-   "start":"node app.js",
+   "start":"node index.js",
   "version": "1.0.0",
   "description": "Website for Bachelor Thesis",
   "main": "index.js",
