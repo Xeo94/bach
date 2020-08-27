@@ -1,6 +1,5 @@
 {
   "name": "website",
-   "start":"node index.js",
   "version": "1.0.0",
   "description": "Website for Bachelor Thesis",
   "main": "index.js",
@@ -14,6 +13,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "scripts": {
+    "start": "node your-script.js"
+},
   "keywords": [
     "bachelor",
     "thesis",
