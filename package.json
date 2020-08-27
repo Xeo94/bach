@@ -14,7 +14,7 @@
     "test": "mocha"
   },
   "scripts": {
-    "start": "node your-script.js"
+    "start": "index.js"
 },
   "keywords": [
     "bachelor",
