@@ -61,7 +61,7 @@ if ('geolocation' in navigator) {
           document.getElementById('humidity').setAttribute("text",{value:'Humidity: '+weather_data_today['humidity']*100+' %'});
           document.getElementById('uvindex').setAttribute("text",{value:'UV-Index: '+weather_data_today['uvIndex']});
           document.getElementById('location').setAttribute("text",{value:'Location: '+json_weather['timezone']});
-          document.getElementById('percip').setAttribute("text",{value:'Percipitation Probability: '+(weather_data_today['precipProbability']*100).toFixed(0)+' %'});
+          document.getElementById('percip').setAttribute("text",{value:'Precipitation Probability: '+(weather_data_today['precipProbability']*100).toFixed(0)+' %'});
 
 
           document.getElementById('summary+1').setAttribute("text",{value:weather_data_tommorow['summary']});
@@ -70,7 +70,7 @@ if ('geolocation' in navigator) {
           document.getElementById('mintemp+1').setAttribute("text",{value:'Min Temperature: '+toCelsius(weather_data_tommorow['temperatureMin'])+' Celsius'});
           document.getElementById('humidity+1').setAttribute("text",{value:'Humidity: '+weather_data_tommorow['humidity']*100+' %'});
           document.getElementById('uvindex+1').setAttribute("text",{value:'UV-Index: '+weather_data_tommorow['uvIndex']});
-          document.getElementById('percip+1').setAttribute("text",{value:'Percipitation Probability: '+(weather_data_tommorow['precipProbability']*100).toFixed(0)+' %'});
+          document.getElementById('percip+1').setAttribute("text",{value:'Precipitation Probability: '+(weather_data_tommorow['precipProbability']*100).toFixed(0)+' %'});
           
 
 
@@ -80,7 +80,7 @@ if ('geolocation' in navigator) {
           document.getElementById('mintemp+2').setAttribute("text",{value:'Min Temperature: '+toCelsius(weather_data_t2['temperatureMin'])+' Celsius'});
           document.getElementById('humidity+2').setAttribute("text",{value:'Humidity: '+weather_data_t2['humidity']*100+' %'});
           document.getElementById('uvindex+2').setAttribute("text",{value:'UV-Index: '+weather_data_t2['uvIndex']});
-          document.getElementById('percip+2').setAttribute("text",{value:'Percipitation Probability: '+(weather_data_t2['precipProbability']*100).toFixed(0)+' %'});
+          document.getElementById('percip+2').setAttribute("text",{value:'Precipitation Probability: '+(weather_data_t2['precipProbability']*100).toFixed(0)+' %'});
           
 
           document.getElementById('summary+3').setAttribute("text",{value:weather_data_t3['summary']});
@@ -89,7 +89,7 @@ if ('geolocation' in navigator) {
           document.getElementById('mintemp+3').setAttribute("text",{value:'Min Temperature: '+toCelsius(weather_data_t3['temperatureMin'])+' Celsius'});
           document.getElementById('humidity+3').setAttribute("text",{value:'Humidity: '+weather_data_t3['humidity']*100+' %'});
           document.getElementById('uvindex+3').setAttribute("text",{value:'UV-Index: '+weather_data_t3['uvIndex']});
-          document.getElementById('percip+3').setAttribute("text",{value:'Percipitation Probability: '+(weather_data_t3['precipProbability']*100).toFixed(0)+' %'});
+          document.getElementById('percip+3').setAttribute("text",{value:'Precipitation Probability: '+(weather_data_t3['precipProbability']*100).toFixed(0)+' %'});
 
 
           //document.querySelector('#cameraWrapper').setAttribute('position', {x:5, y:1.6, z:9});
