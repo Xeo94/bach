@@ -14,36 +14,41 @@
         
       </a-assets>
       <a-sky src='#sunny-sky'>
+      <img id="map" src="map-austria.jpg">
       </a-sky>
       <!--
       <a-image src="#sun" position='0.68 0.5 0' roughness='0.2'></a-image>
 
 -->
-      <a-entity id="cameraRig" position="3 1.6 6" rotation='0 -35 0'>
+      <a-entity id="cameraRig" position="9 2 9" rotation='0 0 0'>
       	<a-camera>
       		<a-cursor></a-cursor>
       	</a-camera>
       </a-entity>
 
+      <a-plane src="#map" height="20" width="34.2" rotation="-90 0 0"></a-plane>
+
+
+
 <!--TODAY SECTION-->
       <!--<a-entity geometry="primitive: box; width: 4; height: 4; depth: 0.01" position='1.5 2.3 -0.1' rotation= '0 -15 0' color='blue'></a-entity>-->
 
 
-      <a-text id='location' value='' color='black' height='2' side='double' line-height='4' position='5 5 3' rotation= '0 -35 0'></a-text>
-      <a-text id='time' value='' color='black' height='2' side='double' line-height='4' position='0 4 0' rotation= '0 -15 0'>
+      <a-text id='location' value='' color='black' height='2' side='double' line-height='4' position='12 5 -3' rotation= '0 -30 0'></a-text>
+      <a-text id='time' value='' color='black' height='2' side='double' line-height='4' position='12 4 -3' rotation= '0 -30 0'>
       </a-text>
-      <a-text id='summary' value='' color='black' height='1' side='double' line-height='2' position='0 3.5 0' rotation= '0 -15 0'>
+      <a-text id='summary' value='' color='black' height='1' side='double' line-height='2' position='12 3.5 -3' rotation= '0 -30 0'>
       </a-text>
 
-      <a-text id='maxtemp' value='' color='black' height='2' side='double' line-height='4' position='0 3 0' rotation= '0 -15 0'>
+      <a-text id='maxtemp' value='' color='black' height='2' side='double' line-height='4' position='12 3 -3' rotation= '0 -30 0'>
       </a-text>
-      <a-text id='mintemp' value='Data loading ...' color='black' height='2' side='double' line-height='4' position='0 2.5 0' rotation= '0 -15 0'>
+      <a-text id='mintemp' value='Data loading ...' color='black' height='2' side='double' line-height='4' position='12 2.5 -3' rotation= '0 -30 0'>
       </a-text>
-      <a-text id='humidity' value='' color='black' height='2' side='double' line-height='4' position='0 2 0' rotation= '0 -15 0'>
+      <a-text id='humidity' value='' color='black' height='2' side='double' line-height='4' position='12 2 -3' rotation= '0 -30 0'>
       </a-text>
-      <a-text id='uvindex' value='' color='black' height='2' side='double' line-height='4' position='0 1.5 0' rotation= '0 -15 0'>
+      <a-text id='uvindex' value='' color='black' height='2' side='double' line-height='4' position='12 1.5 -3' rotation= '0 -30 0'>
       </a-text>
-      <a-text id='percip' value='' color='black' height='2' side='double' line-height='4' position='0 0.5 0' rotation= '0 -15 0'>
+      <a-text id='percip' value='' color='black' height='2' side='double' line-height='4' position='12 0.5 -3' rotation= '0 -30 0'>
       </a-text>
       
 
@@ -53,41 +58,41 @@
 
 <!--Today+1 SECTION-->
 
-      
-      <a-text id='time+1' value='' color='black' height='2' side='double' line-height='4' position='4 4 1' rotation= '0 -30 0'>
+      <a-text id='location+G' value='' color='black' height='2' side='double' line-height='4' position='8 5 3' rotation= '0 0 0'></a-text>
+      <a-text id='time+G' value='' color='black' height='2' side='double' line-height='4' position='8 4 3' rotation= '0 0 0'>
       </a-text>
-      <a-text id='summary+1' value='' color='black' height='1' side='double' line-height='2' position='4 3.5 1' rotation= '0 -30 0'>
+      <a-text id='summary+G' value='' color='black' height='1' side='double' line-height='2' position='8 3.5 3' rotation= '0 0 0'>
       </a-text>
 
-      <a-text id='maxtemp+1' value='' color='black' height='2' side='double' line-height='4' position='4 3 1' rotation= '0 -30 0'>
+      <a-text id='maxtemp+G' value='' color='black' height='2' side='double' line-height='4' position='8 3 3' rotation= '0 0 0'>
       </a-text>
-      <a-text id='mintemp+1' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='4 2.5 1' rotation= '0 -30 0'>
+      <a-text id='mintemp+G' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='8 2.5 3' rotation= '0 0 0'>
       </a-text>
-      <a-text id='humidity+1' value='' color='black' height='2' side='double' line-height='4' position='4 2 1' rotation= '0 -30 0'>
+      <a-text id='humidity+G' value='' color='black' height='2' side='double' line-height='4' position='8 2 3' rotation= '0 0 0'>
       </a-text>
-      <a-text id='uvindex+1' value='' color='black' height='2' side='double' line-height='4' position='4 1.5 1' rotation= '0 -30 0'>
+      <a-text id='uvindex+G' value='' color='black' height='2' side='double' line-height='4' position='8 1.5 3' rotation= '0 0 0'>
       </a-text>
-      <a-text id='percip+1' value='' color='black' height='2' side='double' line-height='4' position='4 0.5 1' rotation= '0 -30 0'>
+      <a-text id='percip+G' value='' color='black' height='2' side='double' line-height='4' position='8 0.5 3' rotation= '0 0 0'>
       </a-text>
      
 
 <!--Today+2 SECTION-->
 
-      
-      <a-text id='time+2' value='' color='black' height='2' side='double' line-height='4' position='8 4 3' rotation= '0 -45 0'>
+      <a-text id='location+V' value='' color='black' height='2' side='double' line-height='4' position='0.5 5 6' rotation= '0 15 0'></a-text>
+      <a-text id='time+V' value='' color='black' height='2' side='double' line-height='4' position='0.5 4 6' rotation= '0 15 0'>
       </a-text>
-      <a-text id='summary+2' value='' color='black' height='1' side='double' line-height='2' position='8 3.5 3' rotation= '0 -45 0'>
+      <a-text id='summary+V' value='' color='black' height='1' side='double' line-height='2' position='0.5 3.5 6' rotation= '0 15 0'>
       </a-text>
 
-      <a-text id='maxtemp+2' value='' color='black' height='2' side='double' line-height='4' position='8 3 3' rotation= '0 -45 0'>
+      <a-text id='maxtemp+V' value='' color='black' height='2' side='double' line-height='4' position='0.5 3 6' rotation= '0 15 0'>
       </a-text>
-      <a-text id='mintemp+2' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='8 2.5 3' rotation= '0 -45 0'>
+      <a-text id='mintemp+V' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='0.5 2.5 6' rotation= '0 15 0'>
       </a-text>
-      <a-text id='humidity+2' value='' color='black' height='2' side='double' line-height='4' position='8 2 3' rotation= '0 -45 0'>
+      <a-text id='humidity+V' value='' color='black' height='2' side='double' line-height='4' position='0.5 2 6' rotation= '0 15 0'>
       </a-text>
-      <a-text id='uvindex+2' value='' color='black' height='2' side='double' line-height='4' position='8 1.5 3' rotation= '0 -45 0'>
+      <a-text id='uvindex+V' value='' color='black' height='2' side='double' line-height='4' position='0.5 1.5 6' rotation= '0 15 0'>
       </a-text>
-      <a-text id='percip+2' value='' color='black' height='2' side='double' line-height='4' position='8 0.5 3' rotation= '0 -45 0'>
+      <a-text id='percip+V' value='' color='black' height='2' side='double' line-height='4' position='0.5 0.5 6' rotation= '0 15 0'>
       </a-text>
 
 
@@ -96,21 +101,80 @@
 
 <!--Today+3 SECTION-->
 
-      
-      <a-text id='time+3' value='' color='black' height='2' side='double' line-height='4' position='12 4 6' rotation= '0 -60 0'>
+      <a-text id='location+L' value='' color='black' height='2' side='double' line-height='4' position='2.5 5 -3.5' rotation= '0 0 0'></a-text>
+      <a-text id='time+L' value='' color='black' height='2' side='double' line-height='4' position='2.5 4 -3.5' rotation= '0 0 0'>
       </a-text>
-      <a-text id='summary+3' value='' color='black' height='1' side='double' line-height='2' position='12 3.5 6' rotation= '0 -60 0'>
+      <a-text id='summary+L' value='' color='black' height='1' side='double' line-height='2' position='2.5 3.5 -3.5' rotation= '0 0 0'>
       </a-text>
 
-      <a-text id='maxtemp+3' value='' color='black' height='2' side='double' line-height='4' position='12 3 6' rotation= '0 -60 0'>
+      <a-text id='maxtemp+L' value='' color='black' height='2' side='double' line-height='4' position='2.5 3 -3.5' rotation= '0 0 0'>
       </a-text>
-      <a-text id='mintemp+3' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='12 2.5 6' rotation= '0 -60 0'>
+      <a-text id='mintemp+L' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='2.5 2.5 -3.5' rotation= '0 0 0'>
       </a-text>
-      <a-text id='humidity+3' value='' color='black' height='2' side='double' line-height='4' position='12 2 6' rotation= '0 -60 0'>
+      <a-text id='humidity+L' value='' color='black' height='2' side='double' line-height='4' position='2.5 2 -3.5' rotation= '0 0 0'>
       </a-text>
-      <a-text id='uvindex+3' value='' color='black' height='2' side='double' line-height='4' position='12 1.5 6' rotation= '0 -60 0'>
+      <a-text id='uvindex+L' value='' color='black' height='2' side='double' line-height='4' position='2.5 1.5 -3.5' rotation= '0 0 0'>
       </a-text>
-      <a-text id='percip+3' value='' color='black' height='2' side='double' line-height='4' position='12 0.5 6' rotation= '0 -60 0'>
+      <a-text id='percip+L' value='' color='black' height='2' side='double' line-height='4' position='2.5 0.5 -3.5' rotation= '0 0 0'>
+      </a-text>
+
+
+      <!--Today+4 SECTION-->
+
+      <a-text id='location+S' value='' color='black' height='2' side='double' line-height='4' position='-2 5 -0.5' rotation= '0 20 0'></a-text>
+      <a-text id='time+S' value='' color='black' height='2' side='double' line-height='4' position='-2 4 -0.5' rotation= '0 20 0'>
+      </a-text>
+      <a-text id='summary+S' value='' color='black' height='1' side='double' line-height='2' position='-2 3.5 -0.5' rotation= '0 20 0'>
+      </a-text>
+
+      <a-text id='maxtemp+S' value='' color='black' height='2' side='double' line-height='4' position='-2 3 -0.5' rotation= '0 20 0'>
+      </a-text>
+      <a-text id='mintemp+S' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='-2 2.5 -0.5' rotation= '0 20 0'>
+      </a-text>
+      <a-text id='humidity+S' value='' color='black' height='2' side='double' line-height='4' position='-2 2 -0.5' rotation= '0 20 0'>
+      </a-text>
+      <a-text id='uvindex+S' value='' color='black' height='2' side='double' line-height='4' position='-2 1.5 -0.5' rotation= '0 20 0'>
+      </a-text>
+      <a-text id='percip+S' value='' color='black' height='2' side='double' line-height='4' position='-2 0.5 -0.5' rotation= '0 20 0'>
+      </a-text>
+
+      <!--Today+5 SECTION-->
+
+      <a-text id='location+I' value='' color='black' height='2' side='double' line-height='4' position='-10 5 2' rotation= '0 45 0'></a-text>
+      <a-text id='time+I' value='' color='black' height='2' side='double' line-height='4' position='-10 4 2' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='summary+I' value='' color='black' height='1' side='double' line-height='2' position='-10 3.5 2' rotation= '0 45 0'>
+      </a-text>
+
+      <a-text id='maxtemp+I' value='' color='black' height='2' side='double' line-height='4' position='-10 3 2' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='mintemp+I' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='-10 2.5 2' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='humidity+I' value='' color='black' height='2' side='double' line-height='4' position='-10 2 2' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='uvindex+I' value='' color='black' height='2' side='double' line-height='4' position='-10 1.5 2' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='percip+I' value='' color='black' height='2' side='double' line-height='4' position='-10 0.5 2' rotation= '0 45 0'>
+      </a-text>
+
+
+      <!--Today+6 SECTION-->
+
+      <a-text id='location+B' value='' color='black' height='2' side='double' line-height='4' position='-16 5 1' rotation= '0 45 0'></a-text>
+      <a-text id='time+B' value='' color='black' height='2' side='double' line-height='4' position='-17 4 1' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='summary+B' value='' color='black' height='1' side='double' line-height='2' position='-17 3.5 1' rotation= '0 45 0'>
+      </a-text>
+
+      <a-text id='maxtemp+B' value='' color='black' height='2' side='double' line-height='4' position='-17 3 1' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='mintemp+B' value='Data loading ...'  color='black' height='2' side='double' line-height='4' position='-17 2.5 1' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='humidity+B' value='' color='black' height='2' side='double' line-height='4' position='-17 2 1' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='uvindex+B' value='' color='black' height='2' side='double' line-height='4' position='-17 1.5 1' rotation= '0 45 0'>
+      </a-text>
+      <a-text id='percip+B' value='' color='black' height='2' side='double' line-height='4' position='-17 0.5 1' rotation= '0 45 0'>
       </a-text>
       
       
